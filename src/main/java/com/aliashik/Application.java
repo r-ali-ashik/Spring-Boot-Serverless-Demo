@@ -9,6 +9,7 @@ import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
@@ -17,7 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.aliashik.controller")
+@EnableWebMvc
+@ComponentScan(basePackages = "com.aliashik")
 public class Application extends SpringBootServletInitializer {
 
     /*
